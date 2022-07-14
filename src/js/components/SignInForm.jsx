@@ -81,7 +81,7 @@ export default function ({signUp}) {
             <h1>Sign in you Fiber account</h1>
             <form className="sign-form" id='SU_form' onSubmit={handleSubmit} >
                 <label htmlFor="">E-mail</label>
-                <input type="email" name="email" id="SI_email" onChange={handleChange} placeholder='john@example.com' />
+                <input type="text" name="email" id="SI_email" onChange={handleChange} placeholder='john@example.com' />
                 <small className="sign-error-message" data-label = 'email'></small>
 
                 <label htmlFor="">Password</label>

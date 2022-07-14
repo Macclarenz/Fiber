@@ -1467,7 +1467,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
         htmlFor: "",
         children: "E-mail"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("input", {
-        type: "email",
+        type: "text",
         name: "email",
         id: "SI_email",
         onChange: handleChange,
