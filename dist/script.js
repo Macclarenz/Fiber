@@ -592,7 +592,7 @@ __webpack_require__.r(__webpack_exports__);
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
           children: "Create an even more impressive portfolio by creating case studies for your projects. Simply follow our step-by-step guide."
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
-          href: "#",
+          href: "#freeTrial",
           className: "content-link-free-trial",
           children: "Start Free Trial"
         })]
@@ -893,11 +893,11 @@ __webpack_require__.r(__webpack_exports__);
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
         className: "hero-link-container",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
-          href: "#",
+          href: "#freeTrial",
           className: "hero-link-free-trial",
           children: "Start Free Trial"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("a", {
-          href: "#",
+          href: "#viewExample",
           className: "hero-link-view-examples",
           children: "View Examples"
         })]
@@ -992,7 +992,7 @@ __webpack_require__.r(__webpack_exports__);
   var navArr = [['Community', 'Pricing', 'Features'], ['Sign In', 'Sign Up']];
   var navMainEl = navArr[0].map(function (el, i) {
     return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
-      href: el,
+      href: "#".concat(el),
       children: el
     }, i);
   });
@@ -1029,7 +1029,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
   var navUserEl = [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
-    href: "#",
+    href: "#".concat(name),
     children: name
   }, 1), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
     href: "#",
@@ -1076,7 +1076,7 @@ __webpack_require__.r(__webpack_exports__);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
     className: "navBar-container",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
-      href: "Home",
+      href: "#Home",
       className: "nav-logo",
       children: "Fiber"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
@@ -1242,7 +1242,7 @@ __webpack_require__.r(__webpack_exports__);
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("p", {
         children: el.text
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("a", {
-        href: "#".concat(addPossessionName(el.user.name)),
+        href: "#".concat(el.user.name),
         children: ["View ", addPossessionName(el.user.name), " Portfolio"]
       })]
     }, el.id);
@@ -1269,7 +1269,7 @@ __webpack_require__.r(__webpack_exports__);
     ref: reviewRef,
     children: reviewEl
   });
-} // window.addEventListener('i')
+}
 
 /***/ }),
 
@@ -2272,12 +2272,12 @@ __webpack_require__.r(__webpack_exports__);
       server.create('user', {
         name: 'John Doe',
         email: 'john@example.com',
-        password: 'jd123'
+        password: 'john12345'
       });
       server.create('user', {
         name: 'Jane Louie',
         email: 'jane@example.com',
-        password: 'jn123'
+        password: 'jane12345'
       });
     },
     routes: function routes() {

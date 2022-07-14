@@ -68,7 +68,7 @@ export default function () {
                 <section className="content-text-container">
                     <h2>Diversify your portfolio.</h2>
                     <p>Create an even more impressive portfolio by creating case studies for your projects. Simply follow our step-by-step guide.</p>
-                    <a href="#" className="content-link-free-trial">Start Free Trial</a>
+                    <a href="#freeTrial" className="content-link-free-trial">Start Free Trial</a>
                 </section>
                 <div className="content-image-container"><img src={pageImg} alt="Page image" /></div>
             </div>

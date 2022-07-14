@@ -59,7 +59,7 @@ export default function () {
                 </div>
             </div>
             <p>{el.text}</p>
-            <a href={`#${addPossessionName(el.user.name)}`}>View {addPossessionName(el.user.name)} Portfolio</a>
+            <a href={`#${el.user.name}`}>View {addPossessionName(el.user.name)} Portfolio</a>
         </section>
     ))
 
@@ -87,4 +87,3 @@ export default function () {
     )
 }
 
-// window.addEventListener('i')

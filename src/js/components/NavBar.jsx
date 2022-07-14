@@ -11,7 +11,7 @@ export default function ({signPage, name, isLogged}) {
     ]
 
     const navMainEl = navArr[0].map((el, i) => (
-        <a href={el} key={i}>{el}</a>
+        <a href={`#${el}`} key={i}>{el}</a>
     ))
 
     const handleClick_sign = ({target}) => {
@@ -40,7 +40,7 @@ export default function ({signPage, name, isLogged}) {
 
     // IF USER IS ALREADY LOGGED OR SIGNED
     const navUserEl = [
-        <a href="#" key={1}>{name}</a>, 
+        <a href={`#${name}`} key={1}>{name}</a>, 
         <a href="#" key={2} onClick={handleClick_user}>Log out</a>
     ]
 
@@ -67,7 +67,7 @@ export default function ({signPage, name, isLogged}) {
 
     return (
         <div className="navBar-container">
-            <a href="Home" className="nav-logo">Fiber</a>
+            <a href="#Home" className="nav-logo">Fiber</a>
             <button className="nav-hamburger" type='button' style={navHamburger} onClick={handleClick_nav}><img src={hamburgerMenu} alt="Hamburger menu" /></button>
             <div className="nav-container">
                 <nav className="nav-main">

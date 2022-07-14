@@ -50,12 +50,12 @@ export default function() {
             server.create('user', {
                 name: 'John Doe', 
                 email: 'john@example.com',
-                password: 'jd123'
+                password: 'john12345'
             })
             server.create('user', {
                 name: 'Jane Louie',
                 email: 'jane@example.com', 
-                password: 'jn123'
+                password: 'jane12345'
             })
         }, 
         routes() {

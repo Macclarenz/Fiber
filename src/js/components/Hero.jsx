@@ -52,8 +52,8 @@ export default function () {
                 <h1>Create your portfolio in minutes.</h1>
                 <p>With Fiber, you can setup your own personal portfolio in minutes with dozens of premade, beautiful templates.</p>
                 <div className="hero-link-container">
-                    <a href="#" className="hero-link-free-trial">Start Free Trial</a>
-                    <a href="#" className="hero-link-view-examples">View Examples</a>
+                    <a href="#freeTrial" className="hero-link-free-trial">Start Free Trial</a>
+                    <a href="#viewExample" className="hero-link-view-examples">View Examples</a>
                 </div>
                 <ul className="hero-checklist-container">{checkListEl}</ul>
             </div>
