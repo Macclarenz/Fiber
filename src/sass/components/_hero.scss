@@ -1,7 +1,5 @@
 @use '../abstract/' as abs;
 
-
-
 .hero-first-column {
     .hero-img {
         @include abs.centerElement(min(600px, 100%));

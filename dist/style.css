@@ -315,7 +315,7 @@ html, body {
 header {
   background-color: hsl(38deg, 50%, 97%);
   padding-block: 2.5em;
-  height: min(100vh, 900px);
+  height: clamp(100vh, 100%, 900px);
 }
 header .navBar-container, header .hero-container {
   margin: 0 auto;

@@ -7,8 +7,7 @@ html, body {
 header {
     background-color: abs.$pale-grey;
     padding-block: 2.5em;
-    // min-height: 100vh;
-    height: min(100vh, 900px);
+    height: clamp(100vh, 100%, 900px);
 
     .navBar-container, .hero-container {
         @include abs.centerElement(min(80%, 1660px));
