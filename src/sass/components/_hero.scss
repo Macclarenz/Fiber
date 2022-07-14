@@ -1,0 +1,138 @@
+@use '../abstract/' as abs;
+
+
+
+.hero-first-column {
+    .hero-img {
+        @include abs.centerElement(min(600px, 100%));
+        display: block;
+        pointer-events: none;
+    }
+}
+
+.hero-second-column {
+    margin-top: 1em;
+
+    & > *:not(:first-child) {
+        margin-top: 1em;
+    }
+
+    h1, p {
+        text-align: center;
+    }
+
+    & > p {
+        @include abs.text(16px, abs.$inter-regular, abs.$grey, center);
+        line-height: 1.4;
+    }
+}
+
+.hero-link-container {
+    @include abs.flex(center, center, column, nowrap, 1em);
+
+    & > a {
+        @include abs.text(16px, abs.$inter-semiBold, abs.$purple, center, none);
+        border-radius: .25em;
+        padding: 1em;
+    }
+
+    & .hero-link-free-trial {
+        background-color: abs.$purple;
+        color: abs.$white;
+        width: 100%;
+        transition: all 400ms ease;
+
+        &:hover {
+            @include abs.hover(abs.$purple, 25)
+        }
+    }
+
+    & .hero-link-view-examples {
+        padding: .25em 0;
+        position: relative;
+
+        &::before {
+            @include abs.pseudoLine(abs.$purple);
+            transform: scaleX(1)
+        }
+
+        &:hover::before {
+            transform: scaleX(0);
+        }
+    }
+}
+
+.hero-checklist-container {
+    margin-top: 1.5em;
+    list-style: none;
+
+    & > li:not(:first-child) {
+        margin-top: .75em;
+    }
+
+    & > li {
+        @include abs.text(16px, abs.$inter-medium, abs.$grey);
+        display: flex;
+
+        & > img {
+            margin-right: .5em;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-container {
+        @include abs.flex(space-between, center, row-reverse, nowrap);
+
+        .hero-first-column, 
+        .hero-second-column {
+            flex: 1 1 50%;
+        }
+
+        .hero-second-column {
+            h1, p {
+                text-align: left;
+            }
+        }
+    }
+
+    .hero-first-column .hero-img {
+        margin: 0 0 0 auto;
+    }
+
+    .hero-second-column {
+        & > h1 {
+            font-size: clamp(36px, 50vw, 52px);
+            margin-top: .25em !important;
+        }
+
+        & > p {
+            font-size: 18px;
+        }
+    }
+    
+    .hero-link-container {
+        @include abs.flex(flex-start, center, row, nowrap, 2.5em);
+        & > a {
+            padding: 1em 1.5em;
+            font-size: 18px;
+        }
+
+        & .hero-link-free-trial {
+            width: initial;
+        }
+    }
+
+    .hero-checklist-container {
+        @include abs.flex(flex-start, center, row, wrap, 1em);
+        margin-top: 1.25em !important;
+
+        & > li:not(:first-child) {
+            margin-top: 0;
+        }
+
+        & > li {
+            font-size: 18px;
+        }
+    }
+}

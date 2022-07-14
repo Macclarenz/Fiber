@@ -1,0 +1,35 @@
+@use '../abstract/' as abs;
+
+html, body {
+    overflow-x: hidden;
+}
+
+header {
+    background-color: abs.$pale-grey;
+    padding-block: 2.5em;
+    // min-height: 100vh;
+    height: min(100vh, 900px);
+
+    .navBar-container, .hero-container {
+        @include abs.centerElement(min(80%, 1660px));
+    }
+}
+
+main {
+    padding-block: 3.5em 2.5em;
+
+    .content-container {
+        @include abs.centerElement(min(80%, 1660px), false);
+    }
+
+    .review-container {
+        @include abs.centerElement(min(80%, 1660px));
+    }
+}
+
+footer {
+    background-color: abs.$pale-grey;
+    .footer-container {
+        @include abs.centerElement(min(80%, 1660px), false);
+    }
+}

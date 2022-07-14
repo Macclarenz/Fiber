@@ -1,0 +1,1017 @@
+/*!******************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/sass/style.scss ***!
+  \******************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap);
+/*!**********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/sass/style.scss (1) ***!
+  \**********************************************************************************************************************************************/
+.sign-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0;
+}
+
+.sign-form-container {
+  margin: 0 auto;
+  width: min(85%, 550px);
+  padding-block: 3em;
+}
+.sign-form-container > *:not(:first-child) {
+  margin-top: 1em;
+}
+.sign-form-container > h2 {
+  margin-bottom: 2em;
+}
+.sign-form-container > h2 > a {
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 0%);
+  text-align: initial;
+  text-decoration: initial;
+  text-transform: initial;
+}
+.sign-form-container .sign-form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0;
+}
+.sign-form-container .sign-form > label:not(:first-child) {
+  margin-top: calc(1.5em - 3px);
+}
+.sign-form-container .sign-form > label {
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 0%);
+  text-align: initial;
+  text-decoration: initial;
+  text-transform: initial;
+  margin-bottom: 0.25em;
+}
+.sign-form-container .sign-form > input:not([type=submit]), .sign-form-container .sign-form > input:not([type=button]), .sign-form-container .sign-form > input:not([type=checkbox]) {
+  padding: 0.5em;
+}
+.sign-form-container .sign-form > input[name=email], .sign-form-container .sign-form > input[type=text], .sign-form-container .sign-form > input[type=password] {
+  background-color: transparent;
+  border: none;
+  cursor: initial;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(0deg, 0%, 100%);
+  text-align: left;
+  text-decoration: initial;
+  text-transform: initial;
+  border: 1px solid hsl(0deg, 0%, 85%);
+  color: hsl(0deg, 0%, 0%);
+  padding: 0.75em;
+  transition: all 400ms ease;
+}
+.sign-form-container .sign-form > input[name=email]::placeholder, .sign-form-container .sign-form > input[type=text]::placeholder, .sign-form-container .sign-form > input[type=password]::placeholder {
+  color: hsl(0deg, 0%, 66%);
+}
+.sign-form-container .sign-form > input[name=email][error], .sign-form-container .sign-form > input[type=text][error], .sign-form-container .sign-form > input[type=password][error] {
+  border-color: red;
+}
+.sign-form-container .sign-form > input[type=password]::-ms-reveal {
+  background-image: url("./assets/hide%20password.svg");
+}
+.sign-form-container .sign-form > input[type=submit] {
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  text-decoration: initial;
+  text-transform: initial;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: hsl(258deg, 83%, 45%);
+  margin-block: 1em;
+  padding: 0.75em 1em;
+  transition: all 350ms ease-out;
+}
+.sign-form-container .sign-form > input[type=submit]:hover {
+  background-color: #662deb;
+}
+.sign-form-container .sign-form > input {
+  border-radius: 0.25em;
+  display: block;
+  padding: 0.5em;
+  width: 100%;
+}
+.sign-form-container .sign-form .sign-error-message, .sign-form-container .sign-form .sign-error-authn-message {
+  font-size: 13px;
+  font-weight: 400;
+  color: red;
+  text-align: initial;
+  text-decoration: initial;
+  text-transform: initial;
+  padding-top: 3px;
+}
+.sign-form-container .sign-form > label[for=SU_terms] {
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(0deg, 0%, 0%);
+  text-align: initial;
+  text-decoration: initial;
+  text-transform: initial;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1em;
+  transition: all 400ms ease;
+  outline: 1px solid transparent;
+  outline-offset: 1em;
+}
+.sign-form-container .sign-form > label[for=SU_terms] > input[type=checkbox] {
+  margin-top: 0.25em;
+}
+.sign-form-container .sign-form > label[for=SU_terms] > p > a {
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(258deg, 83%, 45%);
+  text-align: initial;
+  text-decoration: initial;
+  text-transform: initial;
+  background-image: linear-gradient(hsl(258deg, 83%, 45%), hsl(258deg, 83%, 45%));
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: bottom left;
+  transition: all 500ms ease-in-out;
+  background-size: 100% 2px;
+  padding-bottom: 2px;
+}
+.sign-form-container .sign-form > label[for=SU_terms] > p > a:hover {
+  background-size: 0% 2px;
+}
+.sign-form-container .sign-form > label[for=SU_terms][error] {
+  outline: 1px solid red;
+  outline-offset: 1em;
+}
+.sign-form-container .sign-form > p > a {
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(258deg, 83%, 45%);
+  text-align: initial;
+  text-decoration: initial;
+  text-transform: initial;
+  background-image: linear-gradient(hsl(258deg, 83%, 45%), hsl(258deg, 83%, 45%));
+  background-repeat: no-repeat;
+  background-size: 0 2px;
+  background-position: bottom left;
+  transition: all 500ms ease-in-out;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+.sign-form-container .sign-form > p > a:hover {
+  background-size: 100% 2px;
+}
+
+.sign-slider-image-container {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .sign-page-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0;
+    height: max(750px, 100vh);
+  }
+  .sign-page-container .sign-form-container {
+    height: inherit;
+    width: 100%;
+  }
+  .sign-page-container .sign-slider-image-container {
+    height: inherit;
+  }
+  .sign-form-container {
+    flex: 1 1 50%;
+    padding-block: 3em;
+  }
+  .sign-form-container > * {
+    margin: 0 auto;
+    width: 70%;
+  }
+  .sign-form-container > h1 {
+    margin-block: 1.5em;
+  }
+  .sign-form-container .sign-form > label:not(:first-child) {
+    margin-top: 1.75em;
+  }
+  .sign-form-container .sign-form > label[for=SU_terms] {
+    margin-block: 2em 0;
+  }
+  .sign-form-container .sign-form > input[type=submit] {
+    margin-top: 2em;
+  }
+  .sign-form-container .sign-form > p {
+    margin: 0 auto;
+  }
+  .sign-slider-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0;
+    background-image: radial-gradient(circle, hsl(0deg, 0%, 100%) -300%, hsl(258deg, 83%, 45%) 80%);
+    flex: 1 1 50%;
+  }
+  .sign-slider-image-container > * {
+    margin: 0 auto;
+    width: 75%;
+  }
+  .sign-slider-image-container .slider-container {
+    height: 380px;
+    position: relative;
+  }
+  .sign-slider-image-container .slider-container .slider-image {
+    border-radius: 0.25em;
+    height: inherit;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 800ms ease-out;
+  }
+  .sign-slider-image-container .slider-container .slider-image[display] {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 800ms;
+  }
+  .sign-slider-image-container .slider-text-container {
+    text-align: center;
+    margin-top: 2em;
+  }
+  .sign-slider-image-container .slider-text-container > h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: hsl(0deg, 0%, 100%);
+    text-align: center;
+    text-decoration: initial;
+    text-transform: initial;
+  }
+  .sign-slider-image-container .slider-text-container > p {
+    font-size: 16px;
+    font-weight: 300;
+    color: hsl(0deg, 0%, 100%);
+    text-align: center;
+    text-decoration: initial;
+    text-transform: initial;
+    margin: 0 auto;
+    width: 40ch;
+    opacity: 0.7;
+    line-height: 1.4;
+    margin-block: 1em;
+  }
+  .sign-slider-image-container .slider-text-container .slider-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.5em;
+  }
+  .sign-slider-image-container .slider-text-container .slider-button-container > button {
+    background-color: transparent;
+    border: none;
+    cursor: initial;
+    outline: none;
+    background-color: hsl(0deg, 0%, 100%);
+    border-radius: 50%;
+    opacity: 0.5;
+    height: 10px;
+    width: 10px;
+    transition: all 400ms ease;
+  }
+  .sign-slider-image-container .slider-text-container .slider-button-container > button[display] {
+    opacity: 1;
+  }
+}
+html, body {
+  overflow-x: hidden;
+}
+
+header {
+  background-color: hsl(38deg, 50%, 97%);
+  padding-block: 2.5em;
+  height: min(100vh, 900px);
+}
+header .navBar-container, header .hero-container {
+  margin: 0 auto;
+  width: min(80%, 1660px);
+}
+
+main {
+  padding-block: 3.5em 2.5em;
+}
+main .content-container {
+  width: min(80%, 1660px);
+}
+main .review-container {
+  margin: 0 auto;
+  width: min(80%, 1660px);
+}
+
+footer {
+  background-color: hsl(38deg, 50%, 97%);
+}
+footer .footer-container {
+  width: min(80%, 1660px);
+}
+
+.navBar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0;
+  position: relative;
+}
+.navBar-container .nav-logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 0%);
+  text-align: initial;
+  text-decoration: initial;
+  text-transform: initial;
+  margin-right: 2em;
+}
+.navBar-container .nav-hamburger {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.nav-container {
+  margin: 0 auto;
+  width: min(100%, 500px);
+  background-color: hsl(258deg, 83%, 45%);
+  border-radius: 1em 0 1em 0;
+  position: absolute;
+  top: calc(100% + 2em);
+  right: 0;
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: all 300ms ease-out;
+}
+.nav-container[open] {
+  transform: scale(1);
+  opacity: 1;
+}
+.nav-container[open] a {
+  opacity: 1;
+  transition-delay: 300ms;
+}
+.nav-container > nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0;
+  padding: 1.5em 1em;
+}
+.nav-container > nav > a {
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(0deg, 0%, 100%);
+  text-align: initial;
+  text-decoration: initial;
+  text-transform: initial;
+  padding: 0.75em 1em;
+  opacity: 0;
+  transition: all 300ms ease;
+}
+.nav-container .nav-sign {
+  padding-top: 0;
+}
+.nav-container .nav-sign > a {
+  font-weight: 600;
+}
+.nav-container .nav-sign > a:last-child() {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 0.25em;
+  color: hsl(0deg, 0%, 0%);
+  padding-inline: 1.5em;
+}
+.nav-container .nav-sign > a:last-child():hover {
+  background-color: white;
+}
+
+@media (min-width: 1024px) {
+  .nav-logo {
+    flex-basis: auto;
+    font-size: 18px;
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0;
+    background-color: transparent;
+    margin: initial;
+    position: static;
+    width: initial;
+    flex-basis: max(63%, 600px);
+    transform: scale(1);
+    opacity: 1;
+  }
+  .nav-container > nav > a {
+    opacity: 1;
+    transition-delay: 0ms;
+    font-size: 18px;
+  }
+  .nav-container > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0;
+    padding: initial;
+  }
+  .nav-container > nav > a {
+    color: hsl(0deg, 0%, 0%);
+    padding: 1em;
+  }
+  .nav-container .nav-sign {
+    padding: initial;
+  }
+  .nav-container .nav-sign > a:last-child {
+    background-color: hsl(258deg, 83%, 45%);
+    color: hsl(0deg, 0%, 100%);
+    border-radius: 0.25em;
+    margin-left: 2em;
+    padding: 1em 1.5em;
+  }
+  .nav-container .nav-sign > a:last-child:hover {
+    background-color: #9973f2;
+  }
+  .nav-container .nav-main > a, .nav-container .nav-sign > a:not(:last-child) {
+    position: relative;
+    transition: all 400ms ease;
+  }
+  .nav-container .nav-main > a::before, .nav-container .nav-sign > a:not(:last-child)::before {
+    content: "";
+    background-color: currentColor;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: initial;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 400ms ease-out;
+    transform: scaleX(0);
+  }
+  .nav-container .nav-main > a:hover::before, .nav-container .nav-sign > a:not(:last-child):hover::before {
+    transform: scaleX(1);
+  }
+}
+.hero-first-column .hero-img {
+  margin: 0 auto;
+  width: min(600px, 100%);
+  display: block;
+  pointer-events: none;
+}
+
+.hero-second-column {
+  margin-top: 1em;
+}
+.hero-second-column > *:not(:first-child) {
+  margin-top: 1em;
+}
+.hero-second-column h1, .hero-second-column p {
+  text-align: center;
+}
+.hero-second-column > p {
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(0deg, 0%, 40%);
+  text-align: center;
+  text-decoration: initial;
+  text-transform: initial;
+  line-height: 1.4;
+}
+
+.hero-link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1em;
+}
+.hero-link-container > a {
+  font-size: 16px;
+  font-weight: 600;
+  color: hsl(258deg, 83%, 45%);
+  text-align: center;
+  text-decoration: none;
+  text-transform: initial;
+  border-radius: 0.25em;
+  padding: 1em;
+}
+.hero-link-container .hero-link-free-trial {
+  background-color: hsl(258deg, 83%, 45%);
+  color: hsl(0deg, 0%, 100%);
+  width: 100%;
+  transition: all 400ms ease;
+}
+.hero-link-container .hero-link-free-trial:hover {
+  background-color: #9973f2;
+}
+.hero-link-container .hero-link-view-examples {
+  padding: 0.25em 0;
+  position: relative;
+}
+.hero-link-container .hero-link-view-examples::before {
+  content: "";
+  background-color: hsl(258deg, 83%, 45%);
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: initial;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 400ms ease-out;
+  transform: scaleX(1);
+}
+.hero-link-container .hero-link-view-examples:hover::before {
+  transform: scaleX(0);
+}
+
+.hero-checklist-container {
+  margin-top: 1.5em;
+  list-style: none;
+}
+.hero-checklist-container > li:not(:first-child) {
+  margin-top: 0.75em;
+}
+.hero-checklist-container > li {
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(0deg, 0%, 40%);
+  text-align: initial;
+  text-decoration: initial;
+  text-transform: initial;
+  display: flex;
+}
+.hero-checklist-container > li > img {
+  margin-right: 0.5em;
+}
+
+@media (min-width: 1024px) {
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+  .hero-container .hero-first-column,
+.hero-container .hero-second-column {
+    flex: 1 1 50%;
+  }
+  .hero-container .hero-second-column h1, .hero-container .hero-second-column p {
+    text-align: left;
+  }
+  .hero-first-column .hero-img {
+    margin: 0 0 0 auto;
+  }
+  .hero-second-column > h1 {
+    font-size: clamp(36px, 50vw, 52px);
+    margin-top: 0.25em !important;
+  }
+  .hero-second-column > p {
+    font-size: 18px;
+  }
+  .hero-link-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2.5em;
+  }
+  .hero-link-container > a {
+    padding: 1em 1.5em;
+    font-size: 18px;
+  }
+  .hero-link-container .hero-link-free-trial {
+    width: initial;
+  }
+  .hero-checklist-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 1.25em !important;
+  }
+  .hero-checklist-container > li:not(:first-child) {
+    margin-top: 0;
+  }
+  .hero-checklist-container > li {
+    font-size: 18px;
+  }
+}
+.content-container img {
+  max-width: 100%;
+}
+
+.content-container {
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 4em;
+}
+
+.content-small-container-1 > h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(258deg, 83%, 45%);
+  text-align: initial;
+  text-decoration: initial;
+  text-transform: initial;
+}
+.content-small-container-1 > h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 0%);
+  text-align: initial;
+  text-decoration: initial;
+  text-transform: initial;
+  max-width: 25ch;
+  margin-top: 0.5em;
+}
+.content-small-container-1 .content-section-container {
+  margin-block: 3em 4em;
+}
+.content-small-container-1 .content-section-container .content-section:not(:first-child) {
+  margin-top: 2em;
+}
+.content-small-container-1 .content-section-container .content-section > img {
+  display: block;
+  max-width: 100%;
+}
+.content-small-container-1 .content-section-container .content-section > h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 0%);
+  text-align: initial;
+  text-decoration: initial;
+  text-transform: initial;
+  margin-block: 1em;
+}
+.content-small-container-1 .content-section-container .content-section > p {
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(0deg, 0%, 40%);
+  text-align: initial;
+  text-decoration: initial;
+  text-transform: initial;
+  line-height: 1.4;
+}
+
+.content-small-container-2 {
+  background-color: hsl(258deg, 83%, 45%);
+  border-radius: 0.5em;
+  padding: 2em 2em 0 2em;
+  max-height: 550px;
+  overflow: hidden;
+}
+.content-small-container-2 :where(.content-text-container) p, .content-small-container-2 a {
+  font-size: 16px;
+}
+.content-small-container-2 .content-text-container {
+  margin-bottom: 3em;
+}
+.content-small-container-2 .content-text-container > h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+  text-align: initial;
+  text-decoration: initial;
+  text-transform: initial;
+}
+.content-small-container-2 .content-text-container > p {
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(0deg, 0%, 100%);
+  text-align: initial;
+  text-decoration: initial;
+  text-transform: initial;
+  line-height: 1.4;
+  margin-block: 0.75em 1em;
+  opacity: 0.7;
+}
+.content-small-container-2 .content-text-container > a {
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(258deg, 83%, 45%);
+  text-align: center;
+  text-decoration: initial;
+  text-transform: initial;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 0.25em;
+  display: block;
+  padding: 1em;
+  width: 100%;
+  transition: all 400ms ease;
+}
+.content-small-container-2 .content-text-container > a:hover {
+  background-color: #9973f2;
+  color: hsl(0deg, 0%, 100%);
+}
+.content-small-container-2 .content-image-container > img {
+  display: block;
+  border-radius: 0.25em 0.25em 0 0;
+  max-width: 100%;
+  height: clamp(300px, 100%, 540px);
+  object-fit: cover;
+  pointer-events: none;
+}
+
+@media (min-width: 1024px) {
+  .content-small-container-1 .content-section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3em;
+  }
+  .content-small-container-1 .content-section-container .content-section:not(:first-child) {
+    margin-top: initial;
+  }
+  .content-small-container-1 .content-section-container .content-section {
+    flex: 1 1 max(30%, 200px);
+  }
+  .content-small-container-1 .content-section-container .content-section > p {
+    font-size: 18px;
+  }
+  .content-small-container-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 4em;
+    padding: 3em 3em 0 3em;
+  }
+  .content-small-container-2 .content-text-container {
+    flex: 1 1 max(35%, 430px);
+  }
+  .content-small-container-2 .content-text-container > p {
+    font-size: 18px;
+  }
+  .content-small-container-2 .content-text-container > a {
+    padding: 1em 1.5em;
+    width: fit-content;
+  }
+  .content-small-container-2 .content-image-container {
+    flex: 1 1 65%;
+  }
+  .content-small-container-2 .content-image-container > img {
+    height: clamp(350px, 100%, 540px);
+  }
+}
+.review-container .review:not(:first-child) {
+  margin-top: 2em;
+}
+
+.review {
+  border: 1px solid hsl(0deg, 0%, 85%);
+  border-radius: 0.25em;
+  padding: 1em;
+}
+.review > *:not(:first-child) {
+  margin-top: 1em;
+}
+.review .review-user-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0;
+  margin-bottom: -0.5em;
+}
+.review .review-user-container > img {
+  max-width: 100%;
+  margin-right: 0.25em;
+  transform: scale(0.75);
+}
+.review .review-user-container :where(.review-user-text-container) h3, .review .review-user-container p {
+  font-size: 14px;
+}
+.review .review-user-container .review-user-text-container > h3 {
+  color: hsl(258deg, 83%, 45%);
+  font-weight: 700;
+}
+.review > p {
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(0deg, 0%, 0%);
+  text-align: initial;
+  text-decoration: initial;
+  text-transform: initial;
+  line-height: 1.4;
+}
+.review > a {
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(258deg, 83%, 45%);
+  text-align: center;
+  text-decoration: initial;
+  text-transform: initial;
+  border: 1px solid hsl(0deg, 0%, 85%);
+  border-radius: 0.25em;
+  display: block;
+  padding: 1em;
+  width: 100%;
+  transition: all 400ms ease;
+}
+.review > a:hover {
+  background-color: #4d14d2;
+  color: hsl(0deg, 0%, 100%);
+}
+
+@media (min-width: 1024px) {
+  .review-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2em;
+    background-color: transparent;
+    cursor: grab;
+    overflow-x: scroll;
+    margin-left: 10%;
+  }
+  .review-container .review:not(:first-child) {
+    margin-top: 0;
+  }
+  .review-container .review {
+    min-width: 420px;
+    max-width: 420px;
+    padding: 1.5em;
+    z-index: 100;
+  }
+  .review-container .review > *:not(a) {
+    pointer-events: none;
+  }
+  .review-container .review > p {
+    font-size: 18px;
+  }
+  .review-container::-webkit-scrollbar {
+    appearance: none;
+  }
+}
+:where(.footer-container), h3, p, a {
+  font-size: 16px;
+}
+
+.footer-container {
+  margin: 0 auto;
+  width: 80%;
+  padding-block: 3em;
+}
+.footer-container > *:not(:first-child) {
+  margin-top: 2em;
+}
+
+.footer-text > *:not(:first-child) {
+  margin-top: 0.5em;
+}
+.footer-text > h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 0%);
+  text-align: initial;
+  text-decoration: initial;
+  text-transform: initial;
+}
+.footer-text > p {
+  font-weight: 400;
+  color: hsl(0deg, 0%, 40%);
+  text-align: initial;
+  text-decoration: initial;
+  text-transform: initial;
+}
+
+.footer-link-list {
+  list-style: none;
+}
+.footer-link-list .footer-list-item:not(:first-child) {
+  margin-top: 0.75em;
+}
+.footer-link-list .footer-link {
+  font-weight: 400;
+  color: hsl(0deg, 0%, 40%);
+  text-align: left;
+  text-decoration: none;
+  text-transform: initial;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-size: 0 2px;
+  background-position: bottom left;
+  transition: all 500ms ease-in-out;
+  padding-bottom: 3px;
+}
+.footer-link-list .footer-link:hover {
+  background-size: 100% 2px;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    display: grid;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    align-items: stretch;
+    gap: 2em;
+  }
+  .footer-container > *:not(:first-child) {
+    margin-top: 0;
+  }
+  .footer-container .footer-text {
+    grid-column: 1/-1;
+  }
+}
+@media (min-width: 1024px) {
+  :where(.footer-container) h3, p, a {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1440px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1em;
+    padding-block: 5em;
+  }
+  .footer-container .footer-text {
+    flex-basis: 35%;
+  }
+  .footer-container .footer-text > p:last-child {
+    margin-top: 2em;
+  }
+}
+*,
+*::before,
+*::after {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::placeholder,
+*::before::placeholder,
+*::after::placeholder {
+  font-family: "Inter", sans-serif;
+}
+
+.outer-container {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map*/

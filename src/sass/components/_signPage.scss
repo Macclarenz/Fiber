@@ -1,0 +1,264 @@
+@use '../abstract/'as abs;
+// @use '../../Assets/hide\ password.svg' as pass;
+
+.sign-page-container {
+    @include abs.flex(center, center, column);
+}
+
+.sign-form-container {
+    @include abs.centerElement(min(85%, 550px));
+    padding-block: 3em;
+
+    &>*:not(:first-child) {
+        margin-top: 1em;
+    }
+
+    &>h2 {
+        margin-bottom: 2em;
+
+        &>a {
+            @include abs.text(18px, abs.$inter-bold, abs.$black);
+        }
+    }
+
+    .sign-form {
+        @include abs.flex(center, flex-start, column, nowrap);
+
+        &>label:not(:first-child) {
+            margin-top: calc(1.5em - 3px);
+        }
+
+        &>label {
+            @include abs.text(16px, abs.$inter-bold, abs.$black);
+            margin-bottom: .25em;
+        }
+
+        &>input:not([type=submit]),
+        &>input:not([type=button]),
+        &>input:not([type=checkbox]) {
+            padding: .5em;
+        }
+
+        &>input[name=email],
+        &>input[type=text],
+        &>input[type=password] {
+            @include abs.resetInput();
+            @include abs.text(16px, abs.$inter-medium, abs.$white, left);
+            border: 1px solid abs.$very-light-grey;
+            color: abs.$black;
+            padding: .75em;
+            transition: all 400ms ease;
+
+            &::placeholder {
+                color: abs.$light-grey;
+            }
+
+            &[error] {
+                border-color: red;
+            }
+        }
+
+        &>input[type=password]::-ms-reveal {
+            // since your using sass-loader and css-loader, all urls must be relative to the entry-file (e.g. style.scss)
+            background-image: url('../Assets/hide password.svg')
+        }
+
+        &>input[type=submit] {
+            @include abs.text(16px, abs.$inter-medium, abs.$white, center);
+            @include abs.resetInput(pointer);
+            background-color: abs.$purple;
+            margin-block: 1em;
+            padding: .75em 1em;
+            transition: all 350ms ease-out;
+
+            &:hover {
+                @include abs.hover(abs.$purple, 10);
+            }
+        }
+
+        &>input {
+            border-radius: .25em;
+            display: block;
+            padding: 0.5em;
+            width: 100%;
+        }
+
+        & .sign-error-message, 
+        & .sign-error-authn-message {
+            @include abs.text(13px, abs.$inter-regular, red);
+            padding-top: 3px;
+            
+        }
+
+        &>label[for=SU_terms] {
+            @include abs.text(16px, abs.$inter-medium, abs.$black);
+            @include abs.flex(space-between, flex-start, row, nowrap, 1em);
+            transition: all 400ms ease;
+            outline: 1px solid transparent;
+            outline-offset: 1em;
+
+            &>input[type=checkbox] {
+                margin-top: .25em;
+            }
+
+            &>p>a {
+                $thicknes: 2px;
+                @include abs.text(16px, abs.$inter-bold, abs.$purple, initial);
+                @include abs.line(abs.$purple, 100% $thicknes);
+                background-size: 100% $thicknes;
+                padding-bottom: 2px;
+
+                &:hover {
+                    background-size: 0% $thicknes;
+                }
+            }
+
+            &[error] {
+                outline: 1px solid red;
+                outline-offset: 1em;
+            }
+        }
+
+        &>p {
+            &>a {
+                $thicknes: 2px;
+                @include abs.text(16px, abs.$inter-medium, abs.$purple);
+                @include abs.line(abs.$purple, 0 $thicknes);
+                padding-bottom: 3px;
+                text-decoration: none;
+
+                &:hover {
+                    background-size: 100% $thicknes;
+                }
+            }
+        }
+    }
+}
+
+.sign-slider-image-container {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .sign-page-container {
+        @include abs.flex(space-between, flex-start, row, nowrap);
+        // @include abs.grid(1fr, 1fr 1fr, stretch, stretch);
+        // min-height: 100vh;
+        height: max(750px, 100vh);
+
+        & .sign-form-container {
+            height: inherit;
+            width: 100%;
+        }
+
+        & .sign-slider-image-container {
+            height: inherit;
+        }
+    }
+
+    .sign-form-container {
+        flex: 1 1 50%;
+        padding-block: 3em;
+
+        & > * {
+            @include abs.centerElement(70%);
+        }
+
+        & > h1 {
+            margin-block: 1.5em;
+        }
+
+        .sign-form {
+            & > label:not(:first-child) {
+                margin-top: 1.75em;
+            }
+
+            & > label[for=SU_terms] {
+                margin-block: 2em 0;
+            }
+
+            & > input[type=submit] {
+                margin-top: 2em;
+            }
+
+            & > p {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .sign-slider-image-container {
+        @include abs.flex(center, center, column);
+        background-image: radial-gradient(circle, abs.$white -300%, abs.$purple 80%);
+        flex: 1 1 50%;
+
+        & > * {
+            @include abs.centerElement(75%);
+        }
+
+        & .slider-container {
+            height: 380px;
+            position: relative;
+
+            & .slider-image {
+                border-radius: .25em;
+                height: inherit;
+                width: 100%;
+                max-width: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+
+                // when the image does not have 'display' attr
+                opacity: 0;
+                transform: translateY(30px);
+                transition: all 800ms ease-out;
+
+                &[display] {
+                    opacity: 1;
+                    transform: translateY(0);
+                    transition-delay: 800ms;
+                }
+            }
+        }
+
+        & .slider-text-container {
+            text-align: center;
+            margin-top: 2em;
+
+            & > h2 {
+                @include abs.text(32px, abs.$inter-bold, abs.$white, center);
+            }
+
+            & > p {
+                @include abs.text(16px, abs.$inter-light, abs.$white, center);
+                @include abs.centerElement(40ch);
+                opacity: 0.7;
+                line-height: 1.4;
+                margin-block: 1em;
+            }
+
+            & .slider-button-container {
+                @include abs.flex(center, center, row, nowrap, .5em);
+
+                & > button {
+                    @include abs.resetInput(initial);
+                    background-color: abs.$white;
+                    border-radius: 50%;
+                    opacity: 0.5;
+                    height: 10px;
+                    width: 10px;
+                    transition: all 400ms ease;
+
+                    &[display] {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

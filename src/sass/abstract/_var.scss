@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+$inter: 'Inter', sans-serif;
+$inter-weight: (
+    light: 300,
+    regular: 400,
+    medium: 500,
+    semiBold: 600,
+    bold: 700
+);
+
+$inter-light: map-get($inter-weight, light);
+$inter-regular: map-get($inter-weight, regular);
+$inter-medium: map-get($inter-weight, medium);
+$inter-semiBold: map-get($inter-weight, semiBold);
+$inter-bold: map-get($inter-weight, bold);
+
+$pale-grey: hsl(38, 50%, 97%);
+$very-light-grey: hsl(0, 0%, 85%);
+$light-grey: hsl(0, 0%, 66%);
+$grey: hsl(0, 0%, 40%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$purple: hsl(258, 83%, 45%);
+
+

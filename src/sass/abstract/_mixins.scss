@@ -1,0 +1,73 @@
+@mixin flex($justify, $align, $direction: row, $wrap: nowrap, $gap: 0) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    gap: $gap;
+}
+
+@mixin grid($row, $column, $justify, $align, $gap: 0) {
+    display: grid;
+    grid-template-rows: $row;
+    grid-template-columns: $column;
+    justify-items: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin text($size, $weight, $color, $align: initial, $decoration: initial, $transform: initial) {
+    @if $size == 'no font' {
+        font-weight: $weight;
+        color: $color;
+        text-align: $align;
+        text-decoration: $decoration;
+        text-transform: $transform;
+    } @else {
+        font-size: $size;
+        font-weight: $weight;
+        color: $color;
+        text-align: $align;
+        text-decoration: $decoration;
+        text-transform: $transform;
+    } 
+}
+
+@mixin centerElement($width, $withMargin: true) {
+    @if $withMargin == true {
+        margin: 0 auto;  
+    }
+    width: $width;
+}
+
+@mixin resetInput($cursor: initial) {
+    background-color: transparent;
+    border: none;
+    cursor: $cursor;
+    outline: none;
+}
+
+@mixin pseudoLine($bg-color, $width: 100%, $height: 2px, $top: initial, $bottom: 0, $left: 0, $right: 0) {
+    content: '';
+    background-color: $bg-color;
+    position: absolute;
+    width: $width;
+    height: $height;
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+    right: $right;
+    transition: all 400ms ease-out;
+}
+
+@mixin line($bg-color, $size: 0 3px, $position: bottom left) {
+    background-image: linear-gradient($bg-color, $bg-color);
+    background-repeat: no-repeat;
+    background-size: $size;
+    background-position: $position;
+    transition: all 500ms ease-in-out;
+}
+
+@mixin hover($bg-color, $amount: 25) {
+    background-color: lighten($bg-color, $amount);
+}

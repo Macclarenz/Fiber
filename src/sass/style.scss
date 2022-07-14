@@ -1,0 +1,31 @@
+// @use './components/signPage';
+@use './components/signPage';
+@use './components/body';
+@use './components/navBar';
+@use './components/hero';
+@use './components/content';
+@use './components/review';
+@use './components/footer';
+@use './abstract/'as abs;
+
+*,
+*::before,
+*::after {
+    font-family: abs.$inter;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &::placeholder {
+        font-family: abs.$inter;
+    }
+}
+
+.outer-container {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+img {
+    max-width: 100%;
+}

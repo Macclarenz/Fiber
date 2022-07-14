@@ -1,0 +1,82 @@
+@use '../abstract/' as abs;
+
+:where(.footer-container), h3, p, a {
+    font-size: 16px;
+}
+
+.footer-container {
+    @include abs.centerElement(80%);
+    padding-block: 3em;
+
+    & > *:not(:first-child) {
+        margin-top: 2em;
+    }
+}
+
+.footer-text {
+    & > *:not(:first-child) {
+        margin-top: .5em;
+    }
+
+    & > h3 {
+        @include abs.text(18px, abs.$inter-bold, abs.$black);
+    }
+
+    & > p {
+        @include abs.text('no font', abs.$inter-regular, abs.$grey);
+    }
+}
+
+.footer-link-list {
+    list-style: none;
+
+    & .footer-list-item:not(:first-child) {
+        margin-top: .75em;
+    }
+
+    & .footer-link {
+        $thickness: 2px;
+        @include abs.text('no font', abs.$inter-regular, abs.$grey, left, none);
+        @include abs.line(currentColor, 0 $thickness, bottom left);
+        padding-bottom: 3px;
+
+        &:hover {
+            background-size: 100% $thickness;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        @include abs.grid(auto 1fr 1fr, 1fr 1fr, start, stretch, 2em);
+
+        & > *:not(:first-child) {
+            margin-top: 0;
+        }
+        
+        & .footer-text {
+            grid-column: 1 / -1;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    :where(.footer-container) h3, p, a {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .footer-container {
+        @include abs.flex(space-between, flex-start, row, nowrap, 1em);
+        padding-block: 5em;
+
+        & .footer-text {
+            flex-basis: 35%;
+
+            & > p:last-child {
+                margin-top: 2em;
+            }
+        }
+    }
+}
